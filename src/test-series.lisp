@@ -161,3 +161,10 @@ Series
   (let ((data (scan-file fpath))
         (odd-data (choose-if #'oddp data)))
     (series:collect-sum (series:map-fn 'vector #'(lambda (x y) (* x y)) data odd-data))))
+
+(disassemble '(lambda ()
+               (series:collect-sum
+                (series:choose-if #'oddp (scan-range
+                                          :from 1
+                                          :to 5
+                                          :by 1)))))

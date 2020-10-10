@@ -7,3 +7,6 @@ library. examples of usages are in `test-series.lisp` and example implementation
 work is in `main.lisp`
 
 ## References
+
+Please refere to AIM-1082 and AIM-1083 of the [MIT CSAIL archives for more information on the SERIES
+library. 

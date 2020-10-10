@@ -41,7 +41,7 @@ Series
 
 ;; first example: compute the sum of the positive numbers of a list
 
-(with-open-file (strm #P"~/.roswell/local-projects/afp-series-workshop/src/test-data.txt" :if-does-not-exist :create)
+(with-open-file (strm #P"~/.roswell/local-projects/afp-series-workshop/src/test.data" :if-does-not-exist :create)
   (loop :for line = (read-line strm nil)
         :until (null line)
         :when (oddp (parse-integer line))
